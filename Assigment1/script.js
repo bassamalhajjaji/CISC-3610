@@ -1,36 +1,27 @@
-// Get the canvas and context
-const canvas = document.getElementById('sceneCanvas');
-const ctx = canvas.getContext('2d');
-
-// Load background image
 const background = new Image();
-background.src = 'images/background.png';  // Ensure the image is in the 'images' folder
+background.src = 'images/background.png';  // Ensure this matches exactly
 background.onload = function() {
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
     
-    // Load foreground images AFTER background is drawn
-    loadForeground();
+    loadForeground();  // Load foreground images after background
 };
 
-// Function to load foreground images
 function loadForeground() {
-    const foreground1 = new Image();
-    foreground1.src = 'images/tree.png';  // Change filename as needed
-    foreground1.onload = function() {
-        ctx.drawImage(foreground1, 50, 250, 150, 200);  // Adjust position & size
+    const tree = new Image();
+    tree.src = 'images/tree.png';  // Ensure correct path
+    tree.onload = function() {
+        ctx.drawImage(tree, 50, 250, 150, 200);
 
-        const foreground2 = new Image();
-        foreground2.src = 'images/house.png';  // Change filename as needed
-        foreground2.onload = function() {
-            ctx.drawImage(foreground2, 500, 300, 200, 150);  // Adjust position & size
+        const house = new Image();
+        house.src = 'images/house.png';  // Ensure correct path
+        house.onload = function() {
+            ctx.drawImage(house, 500, 300, 200, 150);
 
-            // Add text after images are drawn
             drawText();
         };
     };
 }
 
-// Function to draw text on the canvas
 function drawText() {
     ctx.font = '30px Arial';
     ctx.fillStyle = 'white';
