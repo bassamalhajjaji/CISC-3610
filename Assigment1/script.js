@@ -1,3 +1,6 @@
+const canvas = document.getElementById('sceneCanvas');
+const ctx = canvas.getContext('2d');
+
 const background = new Image();
 background.src = 'images/background.jpg';  
 background.onload = function() {
