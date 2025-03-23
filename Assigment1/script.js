@@ -27,7 +27,7 @@ function loadForeground() {
 
 function drawText() {
     ctx.font = '30px Arial';
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'black';
     ctx.fillText('My Canvas Scene', 280, 50);
-    ctx.fillText('By: Your Name', 320, 90);
+    ctx.fillText('By: Bassam Alhajjaji', 320, 90);
 }
