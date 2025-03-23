@@ -1,19 +1,19 @@
 const background = new Image();
-background.src = 'images/background.png';  // Ensure this matches exactly
+background.src = 'images/background.jpg';  
 background.onload = function() {
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
     
-    loadForeground();  // Load foreground images after background
+    loadForeground();  
 };
 
 function loadForeground() {
     const tree = new Image();
-    tree.src = 'images/tree.png';  // Ensure correct path
+    tree.src = 'images/tree.png';  
     tree.onload = function() {
         ctx.drawImage(tree, 50, 250, 150, 200);
 
         const house = new Image();
-        house.src = 'images/house.png';  // Ensure correct path
+        house.src = 'images/house.png'; 
         house.onload = function() {
             ctx.drawImage(house, 500, 300, 200, 150);
 
