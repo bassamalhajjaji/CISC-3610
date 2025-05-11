@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SpaceExplorer Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1b2a;
+      color: white;
+      padding: 30px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #00ffff;
+    }
+    img {
+      width: 300px;
+      margin: 10px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    code {
+      background: #111;
+      padding: 2px 4px;
+      border-radius: 5px;
+      color: #00ff00;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📱 SpaceExplorer – Documentation</h1>
+
+  <!-- User Guide -->
+  <h2>6. User Guide</h2>
+  <p>
+    <strong>SpaceExplorer</strong> is a Progressive Web App that teaches students about planets using images, sounds, and descriptions.
+    Users can select a planet from a dropdown menu, view it on canvas, hear facts, and read detailed info — all offline.
+  </p>
+  <p><strong>How to Use:</strong></p>
+  <ul>
+    <li>Select a planet using the dropdown menu.</li>
+    <li>The image will appear on the canvas.</li>
+    <li>Click “Play Audio” to hear a short fact.</li>
+    <li>You can install the app for offline access.</li>
+  </ul>
+
+  <!-- Promotional Page -->
+  <h2>2. Promotional Page & Screenshots</h2>
+  <p>This app is installable on mobile or desktop using the browser's install button or “Add to Home Screen”.</p>
+  <img src="assets/images/screenshot1.png" alt="Screenshot 1">
+  <img src="assets/images/screenshot2.png" alt="Screenshot 2">
+
+  <p><strong>Installation Instructions:</strong></p>
+  <ul>
+    <li>On Chrome desktop: Click the install icon in the address bar.</li>
+    <li>On mobile: Tap the 3-dot menu and choose “Add to Home Screen”.</li>
+  </ul>
+
+  <!-- Programmer Docs -->
+  <h2>7. Programmer Documentation: How to Modify JSON</h2>
+  <p>To add new planet topics, open the <code>data.json</code> file and modify the array inside:</p>
+
+<pre><code>[
+  {
+    "title": "Venus",
+    "description": "Venus is the second planet from the Sun.",
+    "image": "assets/images/venus.png",
+    "audio": "assets/sounds/venus.mp3"
+  }
+]</code></pre>
+
+  <p>Make sure to place the corresponding <code>.png</code> and <code>.mp3</code> files in the correct folders:</p>
+  <ul>
+    <li><code>assets/images/</code> → for the image</li>
+    <li><code>assets/sounds/</code> → for the audio</li>
+  </ul>
+
+  <p>After saving, reload the app — the new planet will appear automatically in the dropdown menu.</p>
+
+</body>
+</html>

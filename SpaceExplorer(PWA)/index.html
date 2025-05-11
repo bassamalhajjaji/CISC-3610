@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceExplorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>🌌 SpaceExplorer</h1>
+  <canvas id="planetCanvas" width="600" height="300"></canvas>
+
+  <div id="menu">
+    <select id="topicSelect"></select>
+    <button onclick="playAudio()">🔊 Play Audio</button>
+  </div>
+
+  <div id="info">
+    <h2 id="title"></h2>
+    <p id="description"></p>
+    <img id="image" width="200">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
